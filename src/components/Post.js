@@ -3,15 +3,22 @@ import {
   StyleSheet,
   View,
   Image,
-  Dimensions
+  Dimensions,
+  Text
 } from 'react-native';
+
+import Author from './Author';
 
 class Post extends Component {
   render(){
     return(
 
       <View style={styles.container}>
+
         <Image source={this.props.image} style={styles.image} />
+        {/* aqui fica o autor */}
+        <Author nickname='Daniel Cunha' />
+
       </View>
     )
   }
